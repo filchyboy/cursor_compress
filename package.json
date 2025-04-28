@@ -1,0 +1,26 @@
+{
+    "name": "cursor-compress-tool",
+    "version": "0.1.0",
+    "description": "CLI utilities to compress schemas and file trees for LLM tooling",
+    "type": "module",
+    "bin": {
+      "cursor-compress": "dist/index.js"
+    },
+    "scripts": {
+      "build": "tsc -p tsconfig.json",
+      "dev": "tsx src/index.ts",
+      "schema:compress": "tsx src/index.ts schema",
+      "structure:compress": "tsx src/index.ts structure",
+      "test": "node --test"
+    },
+    "dependencies": {
+      "clipboardy": "^4.0.0",
+      "commander": "^11.0.0",
+      "fast-glob": "^3.3.2",
+      "ts-morph": "^22.0.0"
+    },
+    "devDependencies": {
+      "tsx": "^4.7.0",
+      "typescript": "^5.4.4"
+    }
+  }
